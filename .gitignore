@@ -1,3 +1,104 @@
 ```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+target/
+
+# C/C++
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ruby
+*.gem
+*.rbc
+coverage/
+*.cover
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vs/
+*.swp
+*.swo
+
+# Testing
+.coverage
+htmlcov/
+.nyc_output/
+coverage.xml
+*.gcda
+*.gcno
+
+# Distribution / packaging
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+
+# CI
+.github/
+.gitlab/
+
+# Vercel
 .vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# General build/cache directories
+.jest/
+.nuxt/
+.next/
+.svelte-kit/
 ```
