@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Aegis Health"
+version = "1.0.0"
+id = "artifacts/health-guide"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25393
+
+[services.development]
+run = "pnpm --filter @workspace/health-guide run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/health-guide", "run", "build" ]
+publicDir = "artifacts/health-guide/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25393"
+BASE_PATH = "/"

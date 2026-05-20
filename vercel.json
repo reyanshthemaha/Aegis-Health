@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd artifacts/health-guide && pnpm install --filter @workspace/health-guide... && pnpm run build",
+  "outputDirectory": "artifacts/health-guide/dist/public",
+  "installCommand": "echo 'Skipping root install'"
+}
